@@ -1,9 +1,11 @@
 package com.ffxiv;
 
+import java.util.Comparator;
+
 public class VenueList {
 	private String name, layout, type, server, housing, aetheryte, day, time;
 	private int ward, plot;
-	
+
 	public VenueList() {
 		this.name = "";
 		this.layout = "";
@@ -16,12 +18,14 @@ public class VenueList {
 		this.plot = 0;
 		this.time = "";
 	}
-	
+
 	public VenueList(String name) {
 		this();
 		this.name = name;
 	}
-	public VenueList(String name, String layout, String type, String server, String housing, String aetheryte, int ward, int plot, String day, String time) {
+
+	public VenueList(String name, String layout, String type, String server, String housing, String aetheryte, int ward,
+			int plot, String day, String time) {
 		this.name = name;
 		this.layout = layout;
 		this.type = type;
@@ -113,10 +117,42 @@ public class VenueList {
 	public void setTime(String time) {
 		this.time = time;
 	}
+
+	public static Comparator<VenueList> compName = new Comparator<VenueList>() {
+		public int compare(VenueList venue1, VenueList venue2) {
+			String vName1 = venue1.getName().toUpperCase();
+			String vName2 = venue2.getName().toUpperCase();
+			return vName1.compareTo(vName2);
+		}
+	};
+	public static Comparator<VenueList> compServer = new Comparator<VenueList>() {
+		public int compare(VenueList venue1, VenueList venue2) {
+			String vServ1 = venue1.getServer().toUpperCase();
+			String vServ2 = venue2.getServer().toUpperCase();
+			return vServ1.compareTo(vServ2);
+		}
+	};
+
 	public String toString() {
-		String s = name + "| " + layout + "| " + type + "| " + server + "| " + housing + "| " + aetheryte + "| " + ward + "| " + plot + "| " + day + "| " + time + "\n";
+		if (name.length() == 0) {
+			this.name = "?";
+		}
+		if (layout.length() == 0) {
+			this.layout = "?";
+		}
+		if (type.length() == 0) {
+			this.type = "?";
+		}
+		if (server.length() == 0) {
+			this.server = "?";
+		}
+		if (housing.length() == 0) {
+			this.aetheryte = "?";
+		}
+
+		String s = String.format("%-30s %-80s %-40s %-15s %-15s %-25s %-5s %-5s %-15s %-15s %n", name, layout, type,
+				server, housing, aetheryte, ward, plot, day, time);
 		return s;
 	}
-	
-	
+
 }
