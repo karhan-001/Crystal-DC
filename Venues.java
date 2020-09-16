@@ -1,6 +1,7 @@
 package com.ffxiv;
 import java.io.*;
 import java.util.*;
+import java.time.*;
 
 public class Venues {
 
@@ -33,14 +34,15 @@ public class Venues {
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found");
 		}
+		printVenues(venues);
 		while(input != 5) {
 		do {
 		System.out.println("Welcome to Crystal DC Venue Database"
 				+"\nPlease make a selection: "
-				+"\n1. Display all venues"
-				+"\n2. Sort Alphabetically"
-				+"\n3. Sort by Server"
-				+"\n4. Add new"
+				+"\n1. Sort Alphabetically"
+				+"\n2. Sort by Server"
+				+"\n3. Add new"
+				+"\n4. Remove"
 				+"\n5. Save and exit");
 		input = scan.nextInt();
 		if(input <1 || input > 5) {
@@ -49,18 +51,15 @@ public class Venues {
 		
 		switch(input) {
 			case 1:
+				Collections.sort(venues, VenueList.compName);
 				printVenues(venues);
 				break;
 			case 2:
 				Collections.sort(venues, VenueList.compName);
-				printVenues(venues);
-				break;
-			case 3:
-				Collections.sort(venues, VenueList.compName);
 				Collections.sort(venues, VenueList.compServer);
 				printVenues(venues);
 				break;
-			case 4:
+			case 3:
 				System.out.println("Please enter the following information or (?) if unknown");
 				System.out.print("Venue name: ");
 				String name = scan.nextLine();
@@ -73,31 +72,22 @@ public class Venues {
 				}
 				System.out.print("Short description: ");
 				String layout = scan.nextLine();
-				//scan.nextLine();
 				System.out.print("Venue type: ");
 				String type = scan.nextLine();
-				//scan.nextLine();
 				System.out.print("World (Server) Location: ");
 				String world = scan.nextLine();
-				//scan.nextLine();
 				System.out.print("Housing district: ");
 				String housing = scan.nextLine();
-				//scan.nextLine();
 				System.out.print("Nearest Aetheryte: ");
 				String aetheryte = scan.nextLine();
-				//scan.nextLine();
 				System.out.print("Ward: ");
 				String wardTemp = scan.nextLine();
-				//scan.nextLine();
 				System.out.print("Plot: ");
 				String plotTemp = scan.nextLine();
-				//scan.nextLine();
 				System.out.print("Open days: ");
 				String days = scan.nextLine();
-				//scan.nextLine();
 				System.out.print("Hours: ");
 				String hours = scan.nextLine();
-				//scan.nextLine();
 				if (wardTemp.equals("?")) {
 					wardTemp = "-1";
 				}
@@ -110,7 +100,24 @@ public class Venues {
 				System.out.print(toAdd.toString());
 				break;
 				
-				
+			case 4:
+				System.out.print("Enter name of venue: ");
+				String venDel = scan.nextLine();
+				venDel = scan.nextLine();
+				for(int i = 0; i<venues.size(); i++) {
+					if(venDel.equalsIgnoreCase(venues.get(i).getName())) {
+						System.out.println("Are you sure you wish to remove: \n" + venues.get(i).toString()
+								+"\n1. Yes"
+								+"\n2. No");
+						int choice = scan.nextInt();
+						scan.nextLine();
+						if(choice == 1) {
+						venues.remove(i);
+						}
+					}
+					
+				}
+				break;
 			case 5:
 				FileWriter output = null;
 				
@@ -118,8 +125,8 @@ public class Venues {
 				{
 					Collections.sort(venues, VenueList.compName);
 					Collections.sort(venues, VenueList.compServer);
-					output = new FileWriter("venuesUpd.csv");
-					output.append("Name of Venue, Description/Layout, Type of Place, Server, Housing, Aetheryte, Ward, Plot, Day, Time(EST)");
+					output = new FileWriter("venues-" + LocalDate.now() + ".csv");
+					output.append("Name of Venue, Description/Layout, Type of Place, Server, Housing, Aetheryte, Ward, Plot, Day, Time(EST)\n");
 					for(int i = 0; i<venues.size(); i++) {
 					output.append(venues.get(i).csvOutput()+ "\n");
 					}
@@ -131,25 +138,10 @@ public class Venues {
 				System.out.println("Thanks for using the Crystal DC Venue Database");
 				break;
 		} 
-		FileWriter output = null;
-		try
-		{
-			Collections.sort(venues, VenueList.compName);
-			Collections.sort(venues, VenueList.compServer);
-			output = new FileWriter("venuesUpd.csv");
-			output.append("Name of Venue, Description/Layout, Type of Place, Server, Housing, Aetheryte, Ward, Plot, Day, Time(EST)\n");
-			for(int i = 0; i<venues.size(); i++) {
-			output.append(venues.get(i).csvOutput()+ "\n");
-			}
-			output.close();
-		} catch (IOException e)
-		{
-			e.printStackTrace();
-		}
 		}while (input < 1|| input > 5);
 		}
 		
-		
+		scan.close();
 
 	}
 	private static void printVenues(ArrayList<VenueList> venues) {
