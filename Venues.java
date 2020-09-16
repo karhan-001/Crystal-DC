@@ -41,12 +41,11 @@ public class Venues {
 				+"\n2. Sort Alphabetically"
 				+"\n3. Sort by Server"
 				+"\n4. Add new"
-				+"\n5. Exit");
+				+"\n5. Save and exit");
 		input = scan.nextInt();
 		if(input <1 || input > 5) {
 			System.out.println("Please make a valid selection: ");
 		}
-		
 		
 		switch(input) {
 			case 1:
@@ -57,57 +56,103 @@ public class Venues {
 				printVenues(venues);
 				break;
 			case 3:
+				Collections.sort(venues, VenueList.compName);
 				Collections.sort(venues, VenueList.compServer);
 				printVenues(venues);
 				break;
 			case 4:
 				System.out.println("Please enter the following information or (?) if unknown");
 				System.out.print("Venue name: ");
-				String name = scan.next();
-				scan.nextLine();
+				String name = scan.nextLine();
+				name = scan.nextLine();
+				for(int i = 0; i < venues.size(); i++) {
+					if ((name.toLowerCase().equals(venues.get(i).getName().toLowerCase()))){
+						System.out.println("Venue already exists in database");
+						break;
+					}
+				}
 				System.out.print("Short description: ");
-				String layout = scan.next();
-				scan.nextLine();
+				String layout = scan.nextLine();
+				//scan.nextLine();
 				System.out.print("Venue type: ");
-				String type = scan.next();
-				scan.nextLine();
+				String type = scan.nextLine();
+				//scan.nextLine();
 				System.out.print("World (Server) Location: ");
-				String world = scan.next();
-				scan.nextLine();
+				String world = scan.nextLine();
+				//scan.nextLine();
 				System.out.print("Housing district: ");
-				String housing = scan.next();
-				scan.nextLine();
+				String housing = scan.nextLine();
+				//scan.nextLine();
 				System.out.print("Nearest Aetheryte: ");
-				String aetheryte = scan.next();
-				scan.nextLine();
+				String aetheryte = scan.nextLine();
+				//scan.nextLine();
 				System.out.print("Ward: ");
-				int wardTemp = scan.nextInt();
-				scan.nextLine();
+				String wardTemp = scan.nextLine();
+				//scan.nextLine();
 				System.out.print("Plot: ");
-				int plotTemp = scan.nextInt();
-				scan.nextLine();
+				String plotTemp = scan.nextLine();
+				//scan.nextLine();
 				System.out.print("Open days: ");
-				String days = scan.next();
-				scan.nextLine();
+				String days = scan.nextLine();
+				//scan.nextLine();
 				System.out.print("Hours: ");
-				String hours = scan.next();
-				scan.nextLine();
-				VenueList toAdd = new VenueList(name, layout, type, world, housing, aetheryte, wardTemp, plotTemp, days, hours);
+				String hours = scan.nextLine();
+				//scan.nextLine();
+				if (wardTemp.equals("?")) {
+					wardTemp = "-1";
+				}
+				if (plotTemp.equals("?")) {
+					plotTemp = "-1";
+				}
+				VenueList toAdd = new VenueList(name, layout, type, world, housing, aetheryte, Integer.parseInt(wardTemp), Integer.parseInt(plotTemp), days, hours);
 				venues.add(toAdd);
 				System.out.println("Thank you for adding: \n");
 				System.out.print(toAdd.toString());
 				break;
+				
+				
 			case 5:
+				FileWriter output = null;
+				
+				try
+				{
+					Collections.sort(venues, VenueList.compName);
+					Collections.sort(venues, VenueList.compServer);
+					output = new FileWriter("venuesUpd.csv");
+					output.append("Name of Venue, Description/Layout, Type of Place, Server, Housing, Aetheryte, Ward, Plot, Day, Time(EST)");
+					for(int i = 0; i<venues.size(); i++) {
+					output.append(venues.get(i).csvOutput()+ "\n");
+					}
+					output.close();
+				} catch (IOException e)
+				{
+					e.printStackTrace();
+				}
 				System.out.println("Thanks for using the Crystal DC Venue Database");
 				break;
 		} 
+		FileWriter output = null;
+		try
+		{
+			Collections.sort(venues, VenueList.compName);
+			Collections.sort(venues, VenueList.compServer);
+			output = new FileWriter("venuesUpd.csv");
+			output.append("Name of Venue, Description/Layout, Type of Place, Server, Housing, Aetheryte, Ward, Plot, Day, Time(EST)\n");
+			for(int i = 0; i<venues.size(); i++) {
+			output.append(venues.get(i).csvOutput()+ "\n");
+			}
+			output.close();
+		} catch (IOException e)
+		{
+			e.printStackTrace();
+		}
 		}while (input < 1|| input > 5);
 		}
 		
 		
 
 	}
-	private static void printVenues(ArrayList venues) {
+	private static void printVenues(ArrayList<VenueList> venues) {
 		String output = venues.toString();
 		output = output.replace("[", " ")
 				.replaceAll(",", "")
@@ -115,8 +160,5 @@ public class Venues {
 		
 		System.out.println(output);
 	}
-	private static void alphabetizeVen(ArrayList venues) {
-		
-	}
-
+	
 }

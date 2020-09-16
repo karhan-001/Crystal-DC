@@ -150,8 +150,30 @@ public class VenueList {
 			this.aetheryte = "?";
 		}
 
-		String s = String.format("%-30s %-80s %-40s %-15s %-15s %-25s %-5s %-5s %-15s %-15s %n", name, layout, type,
+		String s = String.format("%-28s %-65s %-30s %-15s %-15s %-35s %-5s %-5s %-20s %-15s %n", name, layout, type,
 				server, housing, aetheryte, ward, plot, day, time);
+		return s;
+	}
+	
+	public String csvOutput() {
+		if (name.length() == 0) {
+			this.name = "?";
+		}
+		if (layout.length() == 0) {
+			this.layout = "?";
+		}
+		if (type.length() == 0) {
+			this.type = "?";
+		}
+		if (server.length() == 0) {
+			this.server = "?";
+		}
+		if (housing.length() == 0) {
+			this.aetheryte = "?";
+		}
+
+		String s = name+ "," + layout+ "," +type+ ","+
+				server+ "," +housing+ "," +aetheryte+ "," +ward+ "," +plot+ "," +day+ "," +time;
 		return s;
 	}
 

@@ -1,53 +1,65 @@
-Name of Place,Description/Layout,Type of Place,Server,Housing,Housing Aetheryte,Ward,Plot,Day,Time (EST)
+Name of Venue, Description/Layout, Type of Place, Server, Housing, Aetheryte, Ward, Plot, Day, Time(EST)
+Black Ivy Brothel,?,?,Balmung,Shirogane,?,21,13,Sunday,6pm-10pm
+Club Cobalt,?,?,Balmung,Shirogane,?,17,41,Mondays,8pm-12am
 Mad Kings Court,Medium bar with royal theming,Lounge Bar,Balmung,Lavender Beds,,13,41,?,8pm-12am
+Man Made Maid Cafe,RP Maid Cafe,Cafe,Balmung,?,?,-1,-1,?,?
+Sapphire Reliquary,IC bar and club,Bar/Club,Balmung,Shirogane,?,11,7,Saturday,11pm-3am
 Escort Lounge,Courteseans are the main attraction...and so is the beer,Strip club,Brynhildr,Goblet,Goblet west,12,13,Monday,8p-11p
-Fallen Star,,,Brynhildr,Mists,,11,44,Saturday,10pm - 1am
-Shimabara,Asian Restaurant and Lounge,Bar Hotpot Social Casual,Brynhildr,Goblet,,10,13,Thursdays,9-12am
+Fallen Star,?,?,Brynhildr,Mists,,11,44,Saturday,10pm - 1am
 Rengo Bathhouse,2 tier bathhouse with space for large parties and social,Bath Bar Strip club,Brynhildr,Lavender Beds,Lav South Subdivision,20,36,Weekends,
-Shrub Hub Hidden,Lounge and dance club with Forest,Dance Floor Lounge,Coeurl,Lavender Beds,Lav East,21,6,?,
-Twin Otters Tavern,Swashbuckler Shanty Themed Bar cozy and tight knit,Bar,Coeurl,Lavender Beds,,20,9,?,
-The Hawk House,,Casual Bar,Coeurl,Lavender Beds,,21,29,EVENT only,
-Dragon Tear,,,Coeurl,Mists,,13,19,EVENT only,
-The Demon's Drink,,Bar,Coeurl,Mists,,15,40,EVENT only,
-Suiren temple,,,Coeurl,Shirogane,,6,43,EVENT only,
-Foxy Kitsune Club,Dance floor/ strip stages/ deviant fox theme,,Coeurl,Lavender Beds,Lav South Sub,16,36,Mon + Wed,10pm-1am
-Northern Lights,,,Coeurl,Lavender Beds,Lily Hills,4,1,Sun + Mon,12am-3am
+Shimabara,Asian Restaurant and Lounge,Bar Hotpot Social Casual,Brynhildr,Goblet,,10,13,Thursdays,9-12am
+Tranquility Cafe,Peaceful Cafe with dessert food,Casual RP Cafe,Brynhildr,Lavender Beds,?,20,59,Thursday,11:30am-1:30pm
 AuREALia,Small plot/ unsuspecting but badass moshpit. MOSH.,Mosh pit lounge DJ,Coeurl,Goblet,Goblet southwest sub,2,56,tuesdays,8:30pm-1am
-Honey Pot,Golden themed Strip club/ no dancing,Courtesan Lounge Escort bar,Coeurl,Lavender Beds,Lav east,14,6,Wednesdays,9pm-12am
 Delirium,Large Plot/ basement dance floor open lounge with bar,Dance floor Bar lounge,Coeurl,Lavender Beds,Lav East,21,6,,
+Dragon Tear,?,?,Coeurl,Mists,,13,19,EVENT only,
+Foxy Kitsune Club,Dance floor/ strip stages/ deviant fox theme,?,Coeurl,Lavender Beds,Lav South Sub,16,36,Mon + Wed,10pm-1am
+Honey Pot,Golden themed Strip club/ no dancing,Courtesan Lounge Escort bar,Coeurl,Lavender Beds,Lav east,14,6,Wednesdays,9pm-12am
+Nophica,Night Club and Vibe house,?,Coeurl,Shirogane,,4,7,,10pm - 
+Northern Lights,?,?,Coeurl,Lavender Beds,Lily Hills,4,1,Sun + Mon,12am-3am
+Shrub Hub Hidden,Lounge and dance club with Forest,Dance Floor Lounge,Coeurl,Lavender Beds,Lav East,21,6,?,
+Suiren temple,?,?,Coeurl,Shirogane,,6,43,EVENT only,
+The Demon's Drink,?,Bar,Coeurl,Mists,,15,40,EVENT only,
+The Hawk House,?,Casual Bar,Coeurl,Lavender Beds,,21,29,EVENT only,
 Topsy Turvy,Small bar and dance place/ good for comfier dives,Bar Casual Social,Coeurl,Mists,,20,6,,
-Nophica,Night Club and Vibe house,,Coeurl,Shirogane,,4,7,,10pm - 
-Amethyst,,,Diabolos,Goblet,,11,35,Wednesday,12am-3am
-Ember Rose nightclub,,,Diabolos,Mists,,7,41,Wednesday,8:30pm - 11p
+Twin Otters Tavern,Swashbuckler Shanty Themed Bar cozy and tight knit,Bar,Coeurl,Lavender Beds,,20,9,?,
+Amethyst,?,?,Diabolos,Goblet,,11,35,Wednesday,12am-3am
 Ebony Rose,Library and bar/ small as fuck/ bakery,Bar Casual Library Social,Diabolos,Lavender Beds,,19,48,,
-Thorned Dragon,,,Diabolos,Shirogane,,11,7,,
+Ember Rose nightclub,?,?,Diabolos,Mists,,7,41,Wednesday,8:30pm - 11p
+Thorned Dragon,?,?,Diabolos,Shirogane,,11,7,,
+Wicked Whim,Large plot/red themed,Bar/Dance/Casino,Diabolos,Lavender Beds,Lavender Northeast Subdivision,5,58,Thursday,8pm-12am
+Candy Land,Candyland themed maid cafe,RP Cafe,Goblin,Mists,?,13,30,Monday,7pm-11pm
 Starlight sanctum,Big house with bars and bathhouse on basement/ lux,Dance Floor bar,Goblin,Lavender Beds,Lav east,20,6,Weekends,9-1am
 Eden's Garden,Dancer Stage on bottom/ bathtubs on top.,Lounge bathhouse bar,Malboro,Shirogane,,21,15, Mon,9p-2am
-Neon Lights,Dance club with lights,Dance club/DJ,Malboro,Lavender Beds,Lavender northwest,15,28,Fridays,9-12am
+Fairy Tale,?,?,Malboro,Goblet,,19,11,Saturday,12:30am - 2:30am
 Galaxy night Club,Big dance club and dancers are around,Bar/Dance Floor/Courtesans,Malboro,Mists,Mist Northeast,21,15,Fridays,8p-12am
-White Dwarf Tavern,This is a singing lounge,Bar/Lounge,Malboro,Mists,,,,Fridays,
-Playboy mansion,Gigantic ass Strip club/front door congestion is frequent!,Lounge/Club/Escort/Courtesan,Malboro,Mists,Topmast subdivision,21,35,Sat + Sun,all night
-Fairy Tale,,,Malboro,Goblet,,19,11,Saturday,12:30am - 2:30am
-Infinity Night Club,Exclusive/Forest themed/best decoration,Dance Floor/Lounge/bar,Malboro,Goblet,,21,43,Sun + Wed,9pm-11pm
 Gilded Knob,Golden themed Strip club,Bar/Lounge,Malboro,Mists,Mist Northeast,15,17,Thursdays,8pm-12am
+Infinity Night Club,Exclusive/Forest themed/best decoration,Dance Floor/Lounge/bar,Malboro,Goblet,,21,43,Sun + Wed,9pm-11pm
+Neon Lights,Dance club with lights,Dance club/DJ,Malboro,Lavender Beds,Lavender northwest,15,28,Fridays,9-12am
+Pearl,Victorian Brothel,?,Malboro,Lavender Beds,?,18,57,Tuesday,9pm-1am
+Playboy mansion,Gigantic ass Strip club/front door congestion is frequent!,Lounge/Club/Escort/Courtesan,Malboro,Mists,Topmast subdivision,21,35,Sat + Sun,all night
+Primal,Medium sized lounge and hall.,?,Malboro,Shirogane,,20,24,,
 Seraphs,Stripper Bar,Bar/Lounge,Malboro,Lavender Beds,,1,57,Tues,til 12am
+Spiderlilly,Large plot/dark fairy themed,Bar/lounge/club,Malboro,Lavender Beds,Lavender South Subdivision,13,36,Tuesday/Saturday,8pm-12am
 Teraflare,3 Story club/dance floors and performers galore,Dance Floor/Bar/lounge/strip,Malboro,Lavender Beds,Lav south subdivision,6,36,Weekends,
-Gala's Babylon,Lady Gaga house and concert hall,Lounge,Mateus,Goblet,,20,57,?,?
-Wonderland Ravers Ball,Exclusive Big ass strip club multi bar,DJ/Bar/Strip club/lounge,Mateus,Shirogane,,20,47,Event only,
-Crimson Crystal,Go here for music concerts by players,Bar/Music/Lounge,Mateus,Shirogane,East Shiro Sub,15,60,Friday,9 PM EST
-Petty Alchemist,Tavern,,Mateus,Shirogane,,9,42,Monday,7-11p
-Purple Palace,Nightclub and Bar,,Mateus,Goblet,,13,25,Saturday,8-10p
-Garden of Idleness,Large Plot/Fairy themed/Lots of foliage and multi service,Strip club/Bar/Lounge,Mateus,Shirogane,SW Shiro Sub,6,37,Tues + Weds,8-12pm
+White Dwarf Tavern,This is a singing lounge,Bar/Lounge,Malboro,Mists,,0,0,Fridays,
 Blue Miqote,Small Plot and very blue/compact lounge and bar. RP,Lounge/social,Mateus,Shirogane,,1,29,Tuesdays,8-10pm
+Cerulean,Large plot/DJ blue/piano lounge,Bar/dance/DJ/bath,Mateus,Goblet,Goblet Southeast,5,30,?,?
 CLUB KARMA,Luck-based dance club with facades and casino,Dance floor/bar/stripclub,Mateus,Lavender Beds,Lav East,11,6,Wed ,9pm to 1am
-Velvet Lounge,Purple Strip club,Strip club/bar/escorts,Mateus,Goblet,Goblet Southeast,7,30,weekends,
+Crimson Crystal,Go here for music concerts by players,Bar/Music/Lounge,Mateus,Shirogane,East Shiro Sub,15,60,Friday,9 PM EST
 Eclipse Lounge,Medium sized Lounge themed with midnight moonlight,Bar/Courtesans/Escorts,Mateus,Mists,,2,45,Weekends,11pm-1am
-Midnight Orchid,,,Zalera,Goblet,,20,48,?,
-Moonflower Bar,,Bar/Lounge,Zalera,Lavender Beds,,16,5,?,
-Hosting by natsuki,party occasion for misc events ,,Zalera,Goblet,,13,43,EVENT only,
+Gala's Babylon,Lady Gaga house and concert hall,Lounge,Mateus,Goblet,,20,57,?,?
+Garden of Idleness,Large Plot/Fairy themed/Lots of foliage and multi service,Strip club/Bar/Lounge,Mateus,Shirogane,SW Shiro Sub,6,37,Tues + Weds,8-12pm
+Petty Alchemist,Tavern,?,Mateus,Shirogane,,9,42,Monday,7-11p
+Purple Palace,Nightclub and Bar,?,Mateus,Goblet,,13,25,Saturday,8-10p
+Velvet Lounge,Purple Strip club,Strip club/bar/escorts,Mateus,Goblet,Goblet Southeast,7,30,weekends,
+Wonderland Ravers Ball,Exclusive Big ass strip club multi bar,DJ/Bar/Strip club/lounge,Mateus,Shirogane,,20,47,Event only,
 Azeymas wish,Bottom - Lounge and bath/Middle – bar/Top - Stage,Courtesan/Lounge/Escort/bar,Zalera,Lavender Beds,,15,31,mon + Thurs,10pm-12am
-Jade Dragon,,,Zalera,Mists,,21,39,Saturday,8-11pm
-Moonlit Kiss ,Large plot/Spicy Dance hall with full service/experience,Dance Floor/Bar/casino/strip,Zalera,Goblet,Goblet West,7,5,Thurs + Sun,8:30-11:30am
-Storm Oasis Nightclub,,Dance Floor/Bar,Zalera,Goblet,sultanas breath sub,21,42,Weekends,9-12am
 Dragons Den,Medium sized Bar and lounge with dancers/cozy,Bar/Lounge/Casual,Zalera,Shirogane,,3,19,Weekends,9-1am
-Primal,Medium sized lounge and hall.,,Malboro,Shirogane,,20,24,,
+Hades Embrace,Darkness themed,Club,Zalera,Shirogane,?,13,30,?,?
+Hosting by natsuki,party occasion for misc events ,?,Zalera,Goblet,,13,43,EVENT only,
+Jade Dragon,?,?,Zalera,Mists,,21,39,Saturday,8-11pm
+Midnight Orchid,?,?,Zalera,Goblet,,20,48,?,
+Moonflower Bar,?,Bar/Lounge,Zalera,Lavender Beds,,16,5,?,
+Moonlit Kiss ,Large plot/Spicy Dance hall with full service/experience,Dance Floor/Bar/casino/strip,Zalera,Goblet,Goblet West,7,5,Thurs + Sun,8:30-11:30am
+Storm Oasis Nightclub,?,Dance Floor/Bar,Zalera,Goblet,sultanas breath sub,21,42,Weekends,9-12am
+The Right Place,RP bar,Bar,Zalera,Mists,?,16,51,Monday,7pm-9pm
